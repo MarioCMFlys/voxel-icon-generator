@@ -1,6 +1,14 @@
 #!/bin/bash
 source $(dirname "$0")/../common.sh
 
+# Saplings
+generateFlat 'oak_sapling'
+generateFlat 'spruce_sapling'
+generateFlat 'birch_sapling'
+generateFlat 'jungle_sapling'
+generateFlat 'acacia_sapling'
+generateFlat 'dark_oak_sapling'
+
 # Rails
 generateFlat 'rail'
 generateFlat 'powered_rail'
@@ -24,6 +32,40 @@ generateFlatWithName 'sunflower_front' 'sunflower'
 generateFlatWithName 'lilac_top' 'lilac'
 generateFlatWithName 'rose_bush_top' 'rose_bush'
 generateFlatWithName 'peony_top' 'peony'
+generateFlatWithName 'large_fern_top' 'large_fern'
+
+# Coral
+generateFlat 'fire_coral'
+generateFlat 'fire_coral_fan'
+generateFlat 'dead_fire_coral'
+generateFlat 'dead_fire_coral_fan'
+generateFlat 'horn_coral'
+generateFlat 'horn_coral_fan'
+generateFlat 'dead_horn_coral'
+generateFlat 'dead_horn_coral_fan'
+generateFlat 'tube_coral'
+generateFlat 'tube_coral_fan'
+generateFlat 'dead_tube_coral'
+generateFlat 'dead_tube_coral_fan'
+generateFlat 'brain_coral'
+generateFlat 'brain_coral_fan'
+generateFlat 'dead_brain_coral'
+generateFlat 'dead_brain_coral_fan'
+generateFlat 'bubble_coral'
+generateFlat 'bubble_coral_fan'
+generateFlat 'dead_bubble_coral'
+generateFlat 'dead_bubble_coral_fan'
+
+# Other
+generateFlat 'brown_mushroom'
+generateFlat 'red_mushroom'
+generateFlat 'torch'
+generateFlat 'ladder'
+generateFlat 'lily_pad'
+generateFlat 'fern'
+generateFlatWithName 'glass' 'glass_pane'
+generateFlat 'iron_bars'
+generateFlat 'dead_bush'
 
 # Spawn eggs
 generateEgg 'bat' '#493e32' '#151515'
