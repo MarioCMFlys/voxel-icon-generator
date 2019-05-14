@@ -13,6 +13,10 @@ generateIso () {
    -compose over "$4"
 }
 
+generateFlat () {
+  yes | cp -vrf "assets/minecraft/textures/block/${1}.png" "icons/${1}.png"
+}
+
 generateLeaves () {
   convert \
    \( \( \( \( "$1" \( +clone -fill "$2" -colorize 100% \) -compose multiply -composite \) \

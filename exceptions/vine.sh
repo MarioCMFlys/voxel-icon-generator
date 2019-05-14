@@ -1,3 +1,5 @@
 #!/bin/bash
 
-yes | cp -vrf "assets/minecraft/textures/block/vine.png" "icons/vine.png"
+source $(dirname "$0")/../common.sh
+
+generateFlat "vine"

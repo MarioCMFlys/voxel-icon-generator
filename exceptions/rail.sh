@@ -1,3 +1,5 @@
 #!/bin/bash
 
-yes | cp -vrf "assets/minecraft/textures/block/rail.png" "icons/rail.png"
+source $(dirname "$0")/../common.sh
+
+generateFlat "rail"

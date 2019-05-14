@@ -1,3 +1,5 @@
 #!/bin/bash
 
-yes | cp -vrf "assets/minecraft/textures/block/tripwire_hook.png" "icons/tripwire_hook.png"
+source $(dirname "$0")/../common.sh
+
+generateFlat "tripwire_hook"
