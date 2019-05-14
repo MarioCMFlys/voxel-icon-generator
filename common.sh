@@ -13,8 +13,12 @@ generateIso () {
    -compose over "$4"
 }
 
+generateFlatWithName () {
+  yes | cp -vrf "assets/minecraft/textures/block/${1}.png" "icons/${2}.png"
+}
+
 generateFlat () {
-  yes | cp -vrf "assets/minecraft/textures/block/${1}.png" "icons/${1}.png"
+  generateFlatWithName "$1" "$1"
 }
 
 generateLeaves () {
@@ -34,10 +38,6 @@ generateLeaves () {
 }
 
 generateEgg () {
-#  convert \
-#   \( icons/spawn_egg.png -fill "$2" -colorize 60% -compose over \) \
-#   \( icons/spawn_egg_overlay.png -fill "$3" -colorize 75% \) \
-#   -gravity center -composite icons/${1}_spawn_egg.png
   echo "Generating egg $1"
   convert \
    \( icons/spawn_egg.png \( +clone -fill "$2" -colorize 100% \) -compose multiply -composite \) \

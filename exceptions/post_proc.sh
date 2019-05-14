@@ -1,7 +1,31 @@
 #!/bin/bash
 source $(dirname "$0")/../common.sh
 
-# generateEgg '' '#' '#'
+# Rails
+generateFlat 'rail'
+generateFlat 'powered_rail'
+generateFlat 'detector_rail'
+generateFlat 'activator_rail'
+
+# 1-block flowers
+generateFlat 'dandelion'
+generateFlat 'poppy'
+generateFlat 'blue_orchid'
+generateFlat 'allium'
+generateFlat 'azure_bluet'
+generateFlat 'red_tulip'
+generateFlat 'orange_tulip'
+generateFlat 'white_tulip'
+generateFlat 'pink_tulip'
+generateFlat 'oxeye_daisy'
+
+# 2-block flowers
+generateFlatWithName 'sunflower_front' 'sunflower'
+generateFlatWithName 'lilac_top' 'lilac'
+generateFlatWithName 'rose_bush_top' 'rose_bush'
+generateFlatWithName 'peony_top' 'peony'
+
+# Spawn eggs
 generateEgg 'bat' '#493e32' '#151515'
 generateEgg 'blaze' '#e4aa0e' '#dcd96e'
 generateEgg 'cave_spider' '#1a414b' '#8c1618'
