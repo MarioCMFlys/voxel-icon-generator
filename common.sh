@@ -45,3 +45,21 @@ generateEgg () {
    -composite icons/${1}_spawn_egg.png
 }
 
+generatePotion () {
+  echo "Generating potion $1"
+  convert \
+   \( icons/potion.png \) \
+   \( icons/potion_overlay.png \( +clone  -fill "$2" -colorize 100% \) -compose multiply -composite \) \
+   -composite icons/${1}_potion.png
+
+  convert \
+   \( icons/splash_potion.png \) \
+   \( icons/potion_overlay.png \( +clone  -fill "$2" -colorize 100% \) -compose multiply -composite \) \
+   -composite icons/${1}_splash_potion.png
+
+  convert \
+   \( icons/lingering_potion.png \) \
+   \( icons/potion_overlay.png \( +clone  -fill "$2" -colorize 100% \) -compose multiply -composite \) \
+   -composite icons/${1}_lingering_potion.png
+}
+
